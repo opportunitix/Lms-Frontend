@@ -10,7 +10,7 @@ export default function SocialAccounts() {
 
   const fetchAccounts = async () => {
     try {
-      const res = await axios.get('http://localhost:4000/api/social/accounts', {
+      const res = await axios.get('https://lms-backend-7n33.onrender.com/api/social/accounts', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setAccounts(res.data);
