@@ -10,7 +10,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:4000/api/login', {
+      const res = await axios.post('https://lms-backend-7n33.onrender.com/api/login', {
         username,
         password
       });
