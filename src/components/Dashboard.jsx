@@ -14,7 +14,7 @@ export default function Dashboard() {
     }
     (async () => {
       try {
-        const res = await axios.get('http://localhost:4000/api/dashboard', {
+        const res = await axios.get('https://lms-backend-7n33.onrender.com/api/dashboard', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setData(res.data);
